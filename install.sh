@@ -318,7 +318,7 @@ sed -i "s/sspanelv2/mudbjson/g" /usr/local/shadowsocksr/userapiconfig.py
 sed -i "s/UPDATE_TIME = 60/UPDATE_TIME = 10/g" /usr/local/shadowsocksr/userapiconfig.py
 sed -i "s/SERVER_PUB_ADDR = '${nowip}'/SERVER_PUB_ADDR = '$(wget -qO- -t1 -T2 ipinfo.io/ip)'/" /usr/local/shadowsocksr/userapiconfig.py
 #INstall Success
-read -t 20 -p "输入与您主机绑定的域名(请在20秒内输入，超时将跳过本步骤.默认填入本机IP): " ipname
+read -t 20 -p "输入与您主机绑定的域名(请在20秒内输入，哈哈哈哈哈.默认填入本机IP): " ipname
 if [[ -z ${ipname} ]];then
     ipname=$(wget -qO- -t1 -T2 ipinfo.io/ip)
 fi
